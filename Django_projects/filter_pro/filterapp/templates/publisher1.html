@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Logout</title>
+    </head>
+        <body>
+    
+
+            <a href="/logout/"> Logout </a>
+                {% for obj in objs %}
+                  
+                    <h3> {{obj.name}} </h3>
+                    <h3> {{obj.address}} </h3>
+                    <h3> {{obj.e_user.name}} </h3>
+                    <h3> {{obj.e_user.mobile}} </h3>
+                {% endfor %}
+     
+        </body>
+</html>

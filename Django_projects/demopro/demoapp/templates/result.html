@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   
+    <title>List</title> 
+</head> 
+<body> 
+    <center>
+        <table>
+            <tr>
+                <th> FirstName </th>
+                <th> LastName </th>
+                <th> Image</th>
+            </tr>
+            {% for x in data %}
+             
+            <tr>
+                <td> {{x.firstname}} </td>
+                <td> {{x.lastname}} </td>
+                <td > <img src="{{x.pic.url}}" class="img-fluid ${3|rounded-top,rounded-right,rounded-bottom,rounded-left,rounded-circle,|}" alt=""></td>
+            </tr>
+            {%endfor%}
+
+        </table>
+    </center>  
+</body> 
+</html> 

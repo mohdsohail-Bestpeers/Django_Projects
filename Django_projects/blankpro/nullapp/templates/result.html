@@ -1,0 +1,27 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+   
+    <title>List</title> 
+</head> 
+<body> 
+    <center>
+        <table>
+            <tr>
+                <th> fname </th>
+                <th> lname </th>
+                <th> image</th>
+            </tr>
+            {%for x in data%}
+             
+            <tr>
+                <td> {{x.fname}} </td>
+                <td> {{x.lname}} </td>
+                <td> {{x.image}}</td>
+            </tr>
+            {%endfor%}
+
+        </table>
+    </center>  
+</body> 
+</html> 

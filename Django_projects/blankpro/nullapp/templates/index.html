@@ -1,0 +1,17 @@
+<!DOCTYPE html> 
+<html>
+
+<head> 
+     
+    <title>Form</title> 
+</head> 
+<body> 
+     <form method = "post"> 
+        {% csrf_token %} 
+       <input fname="fname" type="text",placeholder="First Name" >
+       <input lname="lname" type="text",placeholder="Last Name" >
+       <input image="image" type="file">
+        <button type="submit">Upload</button> 
+    </form> 
+</body> 
+</html> 
