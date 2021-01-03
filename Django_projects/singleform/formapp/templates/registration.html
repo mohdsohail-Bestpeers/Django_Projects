@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <title>Registration Form</title>
+
+    </head>
+    <body>
+    <table>
+    <form action="." method="post">
+    {% csrf_token %}
+    {{ UserForm}}
+    {{ EventForm }}
+    {{ AddressForm}}
+    {{ EventPhotoForm}}
+    </table>
+    <input type="submit" value="Register">
+</form>
+
+    </body>
+</html>
